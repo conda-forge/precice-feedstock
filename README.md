@@ -58,6 +58,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>linux_64_mpimpichnumpy1.21python3.10.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=14555&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/precice-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpimpichnumpy1.21python3.10.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>linux_64_mpiopenmpinumpy1.18python3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=14555&branchName=master">
@@ -76,6 +83,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=14555&branchName=master">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/precice-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpiopenmpinumpy1.19python3.9.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_64_mpiopenmpinumpy1.21python3.10.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=14555&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/precice-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpiopenmpinumpy1.21python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -100,6 +114,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>osx_64_mpimpichnumpy1.21python3.10.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=14555&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/precice-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpimpichnumpy1.21python3.10.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>osx_64_mpiopenmpinumpy1.18python3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=14555&branchName=master">
@@ -118,6 +139,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=14555&branchName=master">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/precice-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpiopenmpinumpy1.19python3.9.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_mpiopenmpinumpy1.21python3.10.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=14555&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/precice-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpiopenmpinumpy1.21python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr>
