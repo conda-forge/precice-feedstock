@@ -10,7 +10,7 @@ source:
   sha256: 57bab08e8b986f5faa364689d470940dbd9c138e5cfa7b861793e7db56b89da3
 
 build:
-  number: 4
+  number: 5
   skip: true  # [win]
   run_exports:
      - {{ pin_subpackage('precice', max_pin='x.x') }}
@@ -20,6 +20,7 @@ requirements:
     - {{ compiler('cxx') }}
     - {{ compiler('fortran') }}
     - cmake
+    - make
     - pkgconfig
     - python
     - numpy
