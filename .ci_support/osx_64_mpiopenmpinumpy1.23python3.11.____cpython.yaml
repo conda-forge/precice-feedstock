@@ -17,7 +17,7 @@ fortran_compiler:
 fortran_compiler_version:
 - '11'
 libxml2:
-- '2.9'
+- '2.10'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 mpi:
@@ -25,7 +25,7 @@ mpi:
 mpich:
 - '4'
 numpy:
-- '1.19'
+- '1.23'
 openmpi:
 - '4'
 petsc:
@@ -33,13 +33,11 @@ petsc:
 pin_run_as_build:
   boost-cpp:
     max_pin: x.x.x
-  libxml2:
-    max_pin: x.x
   python:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.8.* *_cpython
+- 3.11.* *_cpython
 target_platform:
 - osx-64
 zip_keys:
