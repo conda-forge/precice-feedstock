@@ -9,7 +9,7 @@ channel_targets:
 cxx_compiler:
 - gxx
 cxx_compiler_version:
-- '11'
+- '12'
 docker_image:
 - quay.io/condaforge/linux-anvil-cos7-x86_64
 fmt:
@@ -17,15 +17,15 @@ fmt:
 fortran_compiler:
 - gfortran
 fortran_compiler_version:
-- '11'
+- '12'
 libxml2:
-- '2.10'
+- '2.11'
 mpi:
-- openmpi
+- mpich
 mpich:
 - '4'
 numpy:
-- '1.20'
+- '1.21'
 openmpi:
 - '4'
 petsc:
@@ -37,7 +37,7 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.8.* *_cpython
+- 3.9.* *_cpython
 target_platform:
 - linux-64
 zip_keys:

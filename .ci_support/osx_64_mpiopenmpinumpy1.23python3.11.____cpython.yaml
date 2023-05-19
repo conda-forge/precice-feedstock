@@ -9,15 +9,15 @@ channel_targets:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '14'
+- '15'
 fmt:
 - '9'
 fortran_compiler:
 - gfortran
 fortran_compiler_version:
-- '11'
+- '12'
 libxml2:
-- '2.10'
+- '2.11'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 mpi:
