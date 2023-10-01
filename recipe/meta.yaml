@@ -10,7 +10,7 @@ source:
   sha256: 76ec6ee0d1a66f6f3d3d2d11f03cfc5aa7ef4d9e5deb9b7a4b4455ec7f796c00
 
 build:
-  number: 7
+  number: 8
   skip: true  # [win]
   run_exports:
     - {{ pin_subpackage('precice', max_pin='x.x') }}
@@ -26,7 +26,7 @@ requirements:
     - numpy
   host:
     - python
-    - boost-cpp
+    - libboost-devel
     - eigen
     - fmt
     - libxml2
@@ -36,7 +36,6 @@ requirements:
     - {{ mpi }}
   run:
     - python
-    - {{ pin_compatible('boost-cpp', max_pin='x.x.x') }}
 
 test:
   commands:
