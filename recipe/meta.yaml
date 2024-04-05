@@ -1,5 +1,5 @@
 {% set name = "precice" %}
-{% set version = "3.0.0" %}
+{% set version = "3.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/precice/precice/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: efe6cf505d9305af89c6da1fdba246199a75a1c63a6a22103773ed95341879ba
+  sha256: 11e7d3d4055ee30852c0e83692ca7563acaa095bd223ebdbd5c8c851b3646d37
 
 build:
-  number: 2
+  number: 0
   skip: true  # [win]
   run_exports:
     - {{ pin_subpackage('precice', max_pin='x.x') }}
