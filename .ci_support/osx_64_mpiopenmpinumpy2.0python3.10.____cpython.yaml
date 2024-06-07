@@ -33,7 +33,7 @@ mpich:
 numpy:
 - '2.0'
 openmpi:
-- '4'
+- '5'
 petsc:
 - '3.21'
 pin_run_as_build:
