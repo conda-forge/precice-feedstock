@@ -1,25 +1,26 @@
-{% set name = "precice" %}
-{% set version = "3.4.0" %}
+schema_version: 1
+
+context:
+  name: precice
+  version: "3.4.0"
 
 package:
-  name: {{ name|lower }}
-  version: {{ version }}
+  name: ${{ name|lower }}
+  version: ${{ version }}
 
 source:
-  url: https://github.com/precice/precice/archive/refs/tags/v{{ version }}.tar.gz
+  url: https://github.com/precice/precice/archive/refs/tags/v${{ version }}.tar.gz
   sha256: 1155178da7271c404947d1ff64b6e5028a82575fd532baa26bd6418de5ef2623
 
 build:
-  number: 2
-  skip: true  # [win]
-  run_exports:
-    - {{ pin_subpackage('precice', max_pin='x.x') }}
+  number: 3
+  skip: win
 
 requirements:
   build:
-    - {{ compiler('cxx') }}
-    - {{ compiler('fortran') }}
-    - {{ stdlib("c") }}
+    - ${{ compiler('cxx') }}
+    - ${{ compiler('fortran') }}
+    - ${{ stdlib("c") }}
     - cmake
     - make
     - pkgconfig
@@ -34,18 +35,19 @@ requirements:
     - nlohmann_json
     - numpy
     - petsc
-    - {{ mpi }}
+    - ${{ mpi }}
   run:
     - python
+  run_exports:
+    - ${{ pin_subpackage('precice', upper_bound='x.x') }}
 
-test:
-  commands:
-    - test -f ${PREFIX}/lib/libprecice.so  # [linux]
+tests:
+  - script:
+      - if: linux
+        then: test -f ${PREFIX}/lib/libprecice.so
 
 about:
-  home: https://precice.org/
   license: LGPL-3.0-or-later
-  license_family: GPL
   license_file: LICENSE
   summary: A coupling library for partitioned multi-physics simulations, including, but not restricted to fluid-structure interaction and conjugate heat transfer simulations.
   description: |
@@ -53,8 +55,9 @@ about:
     main component is a library that can be used by simulation programs
     to be coupled together in a partitioned way, enabling multi-physics
     simulations, such as fluid-structure interaction.
-  doc_url: https://precice.org/docs.html
-  dev_url: https://github.com/precice/precice
+  homepage: https://precice.org/
+  repository: https://github.com/precice/precice
+  documentation: https://precice.org/docs.html
 
 extra:
   recipe-maintainers:
