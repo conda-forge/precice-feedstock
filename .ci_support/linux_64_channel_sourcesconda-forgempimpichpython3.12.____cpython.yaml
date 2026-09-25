@@ -1,19 +1,17 @@
-MACOSX_DEPLOYMENT_TARGET:
-- '11.0'
-MACOSX_SDK_VERSION:
-- '11.0'
 c_stdlib:
-- macosx_deployment_target
+- sysroot
 c_stdlib_version:
-- '11.0'
+- '2.17'
 channel_sources:
 - conda-forge
 channel_targets:
 - conda-forge main
 cxx_compiler:
-- clangxx
+- gxx
 cxx_compiler_version:
-- '21'
+- '15'
+docker_image:
+- quay.io/condaforge/linux-anvil-x86_64:alma10
 fmt:
 - '12.1'
 fortran_compiler:
@@ -24,8 +22,6 @@ libboost_devel:
 - '1.90'
 libxml2_devel:
 - '2.15'
-macos_machine:
-- x86_64-apple-darwin13.4.0
 mpi:
 - mpich
 mpich:
@@ -43,7 +39,9 @@ pin_run_as_build:
 python:
 - 3.12.* *_cpython
 target_platform:
-- osx-64
+- linux-64
 zip_keys:
 - - cxx_compiler_version
   - fortran_compiler_version
+- - python
+  - channel_sources
