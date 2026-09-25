@@ -14,9 +14,7 @@ source:
 
 build:
   number: 4
-  skip:
-    - win
-    - python == "3.15" and target_platform == "osx-64"
+  skip: win
 
 requirements:
   build:
