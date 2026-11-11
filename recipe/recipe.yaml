@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: precice
-  version: "3.4.0"
+  version: "3.5.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://github.com/precice/precice/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 1155178da7271c404947d1ff64b6e5028a82575fd532baa26bd6418de5ef2623
+  sha256: cf60ae64b5f738a45c5bc06e39321c3b3a987f4115b401a30246222194797e99
 
 build:
-  number: 3
+  number: 0
   skip: win
 
 requirements:
